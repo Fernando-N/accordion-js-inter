@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E5E5;
+}
+
+hr {
+  margin: 15px 0;
+  
+}
+
+
+main .container  {
+  background: #FCFCFC;
+  position: relative;
+  
+  width: 655px;
+  height: 347px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container .questions-container {
+  width: 390px;
+}
+
+main .container .questions-container h1 {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+main .container .illustration {
+  position: absolute;
+  left: -25%;
+  width: 278px;
+  height: 293px;
+}
+
+main .container .questions-container .question button {
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 1.7rem;
+  display: flex;
+  position: relative;
+  
+}
+
+main .container .questions-container .question button p {  
+  background: url("assets/icone-seta-fechada.png") center center no-repeat;
+  width: 15px;
+  height: 9px;
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  top: 6px;
+
+}
+
+
+
+main .container .questions-container .question .answer {
+  display: none;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 1.5rem;
+
+}
+
+main .container .questions-container .question.active .answer{
+  display: block;
+}
+
+main .container .questions-container .question.active button p {  
+  background: url("assets/icone-seta-aberta.png") center center no-repeat;
+
+
+}
